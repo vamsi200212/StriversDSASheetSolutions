@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class LargestElement{
-    private int largest(int[] arr, int n){
+    public static int largest(int[] arr, int n){
         int max = Integer.MIN_VALUE;
         for(int ele: arr){
             if(ele>max) max = ele;
@@ -16,8 +16,7 @@ public class LargestElement{
             int n = sc.nextInt();
             int[] arr = new int[n];
             for(int i=0;i<n;i++) arr[i] = sc.nextInt();
-            LargestElement ob = new LargestElement();
-            System.out.println("Largest Element - "+ob.largest(arr,n));
+            System.out.println("Largest Element - "+largest(arr,n));
         }
     }
 }
